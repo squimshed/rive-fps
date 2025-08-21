@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jackie Chen - Rive Previews</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Geist">
+  </head>
+  <body>
+        <canvas id="canvas" width="500" height="500"></canvas>
+          <script src="https://unpkg.com/@rive-app/canvas"></script>
+            <script>
+              const r = new rive.Rive({
+                  src: "./assets/fps_selector.riv",
+                  // OR the path to a discoverable and public Rive asset
+                  // src: '/public/example.riv',
+                  canvas: document.getElementById("canvas"),
+                  autoplay: true,
+                  // artboard: "Artboard", // Optional. If not supplied the default is selected
+                  stateMachines: "bumpy",
+                  onLoad: () => {
+                    r.resizeDrawingSurfaceToCanvas();
+                  },
+              });
+</script>
+  </body>
+  <footer>
+    <p>Rive tutorial by <a href="https://www.jakeinmotion.com/" target="_blank">Jake in Motion</a>. Made  by <a href="https://jackiechen.work" target="_blank">jackie</a>.
+  </footer>
+</html>
