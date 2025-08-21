@@ -13,12 +13,9 @@
             <script>
               const r = new rive.Rive({
                   src: "./assets/fps_selector.riv",
-                  // OR the path to a discoverable and public Rive asset
-                  // src: '/public/example.riv',
                   canvas: document.getElementById("canvas"),
                   autoplay: true,
-                  // artboard: "Artboard", // Optional. If not supplied the default is selected
-                  stateMachines: "bumpy",
+                  stateMachines: "FPS State Machine",
                   onLoad: () => {
                     r.resizeDrawingSurfaceToCanvas();
                   },
