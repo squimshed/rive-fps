@@ -83,7 +83,8 @@ a:hover {
 }
 
 @media screen and (max-width: 1350px) {
-  #canvas1, #canvas2 {
+  #canvas {
     width: 80%;
   }
 }
+
